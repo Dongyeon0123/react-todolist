@@ -1,8 +1,84 @@
 .App {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 80px;
   border: 3px solid #000;
   width: 70%;
-  height: 700px;
+  height: 900px;
   border-radius: 15px;
+  background-color: rgb(255, 130, 130);
+  position: relative; /* ✅ 필수 */
+}
+
+.title {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.title-content {
+  text-align: center;
+}
+
+.list {
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(255, 167, 167);
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 60px;
+  background-color: rgb(255, 152, 214);
+  color: white;
+}
+
+.input-box {
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: rgb(255, 167, 167);
+  padding: 20px;
+  width: 80%;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.todo-box {
+  width: 80%;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  border: 2px dotted #000;
+}
+
+.todo-box2 {
+  width: 80%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px dotted #000;
+  margin-bottom: 5px;
+}
+
+.upload {
+  width: 80%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgb(154, 255, 255);
 }
