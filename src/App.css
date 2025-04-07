@@ -5,8 +5,8 @@
   width: 70%;
   height: 900px;
   border-radius: 15px;
-  background-color: rgb(255, 130, 130);
-  position: relative; /* ✅ 필수 */
+  background-color: #ffe0e0; /* 연한 파스텔 핑크 */
+  position: relative;
 }
 
 .title {
@@ -19,32 +19,54 @@
 }
 
 .list {
-  border: 1px solid white;
+  border: 1px solid #f3d1d1;
   border-radius: 15px;
   width: 80%;
   margin: auto;
-  background-color: rgb(255, 167, 167);
+  background-color: #fff3f3; /* 부드러운 크림핑크 */
   padding: 15px;
   margin-bottom: 10px;
   position: relative;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
 }
 
 .delete-button {
   position: absolute;
   right: 10px;
   bottom: 15px;
-  padding: 15px;
-  border: 1px solid white;
+  padding: 10px;
+  border: none;
   border-radius: 10px;
   width: 60px;
-  background-color: rgb(255, 152, 214);
+  background-color: #ff9aa2; /* 산뜻한 핑크 */
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #e07a86; /* hover 시 더 어두운 톤 */
+}
+
+.delete-button:focus {
+  background-color: #c25a67;
 }
 
 .input-box {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   border-radius: 15px;
-  background-color: rgb(255, 167, 167);
+  background-color: #fffafc;
   padding: 20px;
   width: 80%;
   position: absolute;
@@ -57,28 +79,38 @@
   gap: 10px;
 }
 
-
-.todo-box {
-  width: 80%;
-  padding: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 5px;
-  border-radius: 15px;
-  border: 2px dotted #000;
-}
-
+.todo-box,
 .todo-box2 {
   width: 80%;
-  padding: 15px;
+  padding: 15px 20px;
   border-radius: 15px;
-  border: 2px dotted #000;
-  margin-bottom: 5px;
+  border: 2px solid #d3cfcf;
+  background-color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
-.upload {
+.todo-box:focus,
+.todo-box2:focus {
+  background-color: #f6f0f0;
+  border-color: #a9a4a4;
+  outline: none;
+}
+
+.upload-button {
   width: 80%;
   padding: 15px;
   border-radius: 15px;
-  background-color: rgb(154, 255, 255);
+  background-color: #b5ead7; /* 파스텔 민트 */
+  color: #333;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+  background-color: #88d9c0;
+}
+
+.upload-button:focus {
+  background-color: #5fae97;
 }
