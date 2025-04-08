@@ -40,6 +40,29 @@
   color: gray;
 }
 
+.modify-button {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 60px;
+  background-color: #9aa2ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modify-button:hover {
+  background-color: #747bc5;
+}
+
+.modify-button:focus {
+  background-color: #595e94;
+}
+
 .delete-button {
   position: absolute;
   right: 10px;
@@ -56,7 +79,7 @@
 }
 
 .delete-button:hover {
-  background-color: #e07a86; /* hover 시 더 어두운 톤 */
+  background-color: #e07a86;
 }
 
 .delete-button:focus {
@@ -79,8 +102,7 @@
   gap: 10px;
 }
 
-.todo-box,
-.todo-box2 {
+.todo-box {
   width: 80%;
   padding: 15px 20px;
   border-radius: 15px;
@@ -105,6 +127,7 @@
   border: none;
   font-weight: bold;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 .upload-button:hover {
@@ -113,4 +136,103 @@
 
 .upload-button:focus {
   background-color: #5fae97;
+}
+
+.modal {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fffafc;
+  padding: 20px;
+  width: 80%;
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+  z-index: 999; /* 모달보다 약간 낮게 */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.modify-box {
+  width: 80%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: 2px solid #d3cfcf;
+  background-color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.modify-box:focus {
+  background-color: #f6f0f0;
+  border-color: #a9a4a4;
+  outline: none;
+}
+
+.modify-upload {
+  width: 80%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #b5ead7; /* 파스텔 민트 */
+  color: #333;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.modify-upload:hover {
+  background-color: #88d9c0;
+}
+
+.modify-upload:focus {
+  background-color: #5fae97;
+}
+
+.modal-close {
+  background-color: #ff9aa2;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #e07a86;
+}
+
+.modal-close:focus {
+  background-color: #c25a67;
 }
