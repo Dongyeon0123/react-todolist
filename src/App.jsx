@@ -10,7 +10,7 @@ function App() {
   let [제목입력값, 제목입력값변경] = useState('');
   let [메모입력값, 메모입력값변경] = useState('');
   let [체크상태, 체크상태변경] = useState([false, false]);
-  let [모달, 모달상태변경] = useState(0);
+  let [모달, 모달상태변경] = useState(false);
   let [수정인덱스, 수정인덱스변경] = useState(null);
 
   let addList = () => {
@@ -23,16 +23,13 @@ function App() {
     }
   }
 
-  let modifyList = () => {
-
-  }
-
   return (
     <div className='App'>
       <div className='title-box'>
         <h1 className='title'>Todo List</h1>
         <p className='title-content'>{제목.length}개의 할 일이 있습니다.</p>
       </div>
+      <div className='list-container'>
       {
         제목.map(function(a, i){
           return (
@@ -71,6 +68,7 @@ function App() {
           )
         })
       }
+      </div>
       {/* <div className='list'>
         <h3>{리스트제목[0]}</h3>
         <p>{메모[0]}</p>
