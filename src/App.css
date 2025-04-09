@@ -240,12 +240,11 @@
 .list-container {
   max-height: 400px;
   overflow-y: auto;
-  padding-right: 8px;
   margin-bottom: 20px;
 }
 
 .list-container::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 .list-container::-webkit-scrollbar-thumb {
   background-color: #ccc;
