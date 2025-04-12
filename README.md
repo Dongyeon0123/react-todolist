@@ -6,8 +6,8 @@ Todo 앱은 입문자에게 가장 친숙한 예제 중 하나라, 나를 포함
 
 ## 📸 Preview
 
-<img width="300" alt="Todo Preview" src="https://github.com/user-attachments/assets/633e13d1-02f8-4d28-8ca8-6fceee961a20" />
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/b4402ce7-5642-446c-8317-9a83a863a374" />
+<img width="500" alt="Todo Preview" src="https://github.com/user-attachments/assets/633e13d1-02f8-4d28-8ca8-6fceee961a20" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/b4402ce7-5642-446c-8317-9a83a863a374" />
 
 ## ⚙️ 주요 기능
 
