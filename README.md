@@ -1,6 +1,6 @@
 # 📝 React Todo-List Mini Project
 
-React의 기본 개념들을 직접 다뤄보며 익히기 위해 React와 JQuery로 Todo List 미니 프로젝트를 만들어보았다.<br>
+React의 기본 개념들을 직접 다뤄보며 익히기 위해 React로 Todo List 미니 프로젝트를 만들어보았다.<br>
 `useState`, `useEffect`, 배열과 객체 조작, `map()` 함수 등을 활용해서 CRUD 기능을 구현해보는 게 이번 목표이기 때문이다.  
 Todo 앱은 입문자에게 가장 친숙한 예제 중 하나라, 나를 포함한 React를 처음 배우는 분들께도 추천하고 싶은 주제이다.
 
