@@ -1,18 +1,18 @@
-# 📝 React Todo-List Mini Project
+# React Todo-List Mini Project
 
 React의 기본 개념들을 직접 다뤄보며 익히기 위해 Todo List 미니 프로젝트를 만들어보았다.<br>
 `useState`, `useEffect`, 배열과 객체 조작, `map()` 함수 등을 활용해서 CRUD 기능을 구현해보는 게 이번 목표이기 때문이다.  
 Todo 앱은 입문자에게 가장 친숙한 예제 중 하나라, 나를 포함한 React를 처음 배우는 분들께도 추천하고 싶은 주제이다.
 
-## 📸 Preview
+## Preview
 
 <img width="400" alt="Todo Preview" src="https://github.com/user-attachments/assets/633e13d1-02f8-4d28-8ca8-6fceee961a20" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/b4402ce7-5642-446c-8317-9a83a863a374" />
 
-## 📸 프로젝트 시연
+## 프로젝트 시연
 <img src="https://github.com/user-attachments/assets/eb78be07-80ce-4c7c-b769-aaad8e8821bb" width="500"/>
 
-## ⚙️ 주요 기능
+## 주요 기능
 
 할 일 추가 (제목 + 메모)<br>
 할 일 수정 (모달 창 활용)<br>
